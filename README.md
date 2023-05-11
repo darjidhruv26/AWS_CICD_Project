@@ -1,7 +1,6 @@
 # AWS_CICD_Project
 
-![AWS_DevOps_Arch](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/7f602955-af14-4f19-b781-fe0f5870a09f)
-
+![Project_arch](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/13bf2ae1-e32a-40bf-930b-a99e764222e8)
 
 ```bash
 #!/bin/bash 
