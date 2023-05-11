@@ -1,4 +1,7 @@
 # AWS_CICD_Project
+'''
+DevOps project
+'''
 
 ![CodeCommit1 repo ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/55919e95-7ea6-4b69-94f2-fda44af8ce25)
 
