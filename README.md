@@ -9,8 +9,7 @@
  - S3 for artifact storing
  - EC2 for Deployment
  
-![CodeCommit1 repo ss]![AWSDevOps_pro](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/8df97317-8a3d-43b7-9b78-96bb9686cdff)
-(https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/55919e95-7ea6-4b69-94f2-fda44af8ce25)
+![AWSDevOps_pro](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/8df97317-8a3d-43b7-9b78-96bb9686cdff)
 
 ![CodeCommit Code ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/fe415a06-1e71-4560-8e1b-3c2a31809819)
 
