@@ -1,6 +1,21 @@
-# AWS_CICD_Project
+# Project
+# Implimented DevOps CI/CD pipeline using AWS Services
 
 ![Project_arch](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/13bf2ae1-e32a-40bf-930b-a99e764222e8)
+
+![CodeCommit1 repo ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/55919e95-7ea6-4b69-94f2-fda44af8ce25)
+
+![CodeCommit Code ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/fe415a06-1e71-4560-8e1b-3c2a31809819)
+
+![CodeCommit Branchs ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/c3443c4b-fb03-41d2-bf33-cd8d608e0293)
+
+![CodeBuild Project ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/4c334c45-8177-41be-8199-5ce5c8a13177)
+
+![s3 artifect files ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/fb2d4b72-0dd9-4308-a4fd-d70612299607)
+
+![CodeBuild_history](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/785ef619-a181-4710-aea4-c20082c75831)
+
+![EC2 ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/a1697fff-dd42-4db5-b516-936710fb0184)
 
 ```bash
 #!/bin/bash 
@@ -17,19 +32,6 @@ sudo dpkg -i codedeploy-agent_1.3.2-1902_ubuntu22.deb
 systemctl list-units --type=service | grep codedeploy
 sudo service codedeploy-agent status
 ```
-![CodeCommit1 repo ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/55919e95-7ea6-4b69-94f2-fda44af8ce25)
-
-![CodeCommit Code ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/fe415a06-1e71-4560-8e1b-3c2a31809819)
-
-![CodeCommit Branchs ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/c3443c4b-fb03-41d2-bf33-cd8d608e0293)
-
-![CodeBuild Project ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/4c334c45-8177-41be-8199-5ce5c8a13177)
-
-![s3 artifect files ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/fb2d4b72-0dd9-4308-a4fd-d70612299607)
-
-![CodeBuild_history](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/785ef619-a181-4710-aea4-c20082c75831)
-
-![EC2 ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/a1697fff-dd42-4db5-b516-936710fb0184)
 
 ![CodeDeploy output ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/9a147120-e7d0-4251-bab0-664997f90511)
 
