@@ -1,4 +1,8 @@
 # AWS_CICD_Project
+
+![AWS_DevOps_Arch](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/7f602955-af14-4f19-b781-fe0f5870a09f)
+
+
 ```bash
 #!/bin/bash 
 # This installs the CodeDeploy agent and its prerequisites on Ubuntu 22.04.  
