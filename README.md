@@ -1,5 +1,5 @@
 # AWS_CICD_Project
-
+```bash
 #!/bin/bash 
 # This installs the CodeDeploy agent and its prerequisites on Ubuntu 22.04.  
 sudo apt-get update
@@ -13,7 +13,7 @@ dpkg-deb -b codedeploy-agent_1.3.2-1902_ubuntu22/
 sudo dpkg -i codedeploy-agent_1.3.2-1902_ubuntu22.deb
 systemctl list-units --type=service | grep codedeploy
 sudo service codedeploy-agent status
-
+```
 ![CodeCommit1 repo ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/55919e95-7ea6-4b69-94f2-fda44af8ce25)
 
 ![CodeCommit Code ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/fe415a06-1e71-4560-8e1b-3c2a31809819)
