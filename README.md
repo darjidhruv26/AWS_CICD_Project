@@ -1,6 +1,14 @@
 # Project
 # Implimented DevOps CI/CD pipeline using AWS Services
 
+ - CodeCommit
+ - CodeBuild
+ - CodeDeploy
+ - CodePipeline
+ - Identity and Access Management (IAM) for createing Service Role
+ - S3 for artifact storing
+ - EC2 for Deployment
+ 
 ![Project_arch](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/13bf2ae1-e32a-40bf-930b-a99e764222e8)
 
 ![CodeCommit1 repo ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/55919e95-7ea6-4b69-94f2-fda44af8ce25)
