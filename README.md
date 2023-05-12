@@ -22,12 +22,12 @@
 ![gitURL clone](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/ec2e4308-5ef2-48c9-ba67-0ea227354f5e)
 - Also, Add permission to the User get to assess this repo on Locel. 
   (IAM -> Users -> SelectUser -> Add permissions -> Attech polocies directly -> 'AWSCodeCommitPowerUser')
-
-
+- After perform some gitActions and push all files in CodeCommit.
 
 ![CodeCommit Code ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/fe415a06-1e71-4560-8e1b-3c2a31809819)
 
 ![CodeCommit Branchs ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/c3443c4b-fb03-41d2-bf33-cd8d608e0293)
+
 # Step 3
 ![CodeBuild Project ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/4c334c45-8177-41be-8199-5ce5c8a13177)
 
@@ -37,8 +37,10 @@
 ![CodeBuild_history](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/785ef619-a181-4710-aea4-c20082c75831)
 
 # Step 5
-![EC2 ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/a1697fff-dd42-4db5-b516-936710fb0184)
 
+```bash
+sudo su
+```
 ```bash
 #!/bin/bash 
 # This installs the CodeDeploy agent and its prerequisites on Ubuntu 22.04.  
@@ -54,6 +56,8 @@ sudo dpkg -i codedeploy-agent_1.3.2-1902_ubuntu22.deb
 systemctl list-units --type=service | grep codedeploy
 sudo service codedeploy-agent status
 ```
+![EC2 ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/a1697fff-dd42-4db5-b516-936710fb0184)
+
 # Step 6
 ![CodeDeploy output ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/9a147120-e7d0-4251-bab0-664997f90511)
 
