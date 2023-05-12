@@ -40,8 +40,7 @@
    buildspec.yml
  ```
  ```bash
-    version: 0.2
-
+version: 0.2
 phases:
   install:
     commands:
@@ -60,10 +59,12 @@ artifacts:
   files:
     - '**/*'         
  ```
- 
+- Push this buildspec.yml file in CodeCommi.
+- After you can Start to Build 
 ![CodeBuild Project ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/4c334c45-8177-41be-8199-5ce5c8a13177)
 
-# Step 4
+# Step 4 Build Artifact store in S3 Bucket
+- In the CodeBuild console Click on Edit button -> Artifacts -> Type:"S3" -> put Uplode Locetion.
 ![s3 artifect files ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/fb2d4b72-0dd9-4308-a4fd-d70612299607)
 
 ![CodeBuild_history](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/785ef619-a181-4710-aea4-c20082c75831)
