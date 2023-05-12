@@ -18,8 +18,11 @@
  - Go to IAM and create a User
  - User can not get permission to assess AWS CodeCommit, So first gives permissions in IAM.
    (IAM -> Users -> Security credentials -> HTTPS Git credentials for CodeCommit -> Generate)
- - After this click on Clone URL button.
+ - After this click on the Clone URL button.
 ![gitURL clone](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/ec2e4308-5ef2-48c9-ba67-0ea227354f5e)
+- Also, Add permission to the User get to assess this repo on Locel. 
+  (IAM -> Users -> SelectUser -> Add permissions -> Attech polocies directly -> 'AWSCodeCommitPowerUser')
+
 
 
 ![CodeCommit Code ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/fe415a06-1e71-4560-8e1b-3c2a31809819)
