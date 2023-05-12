@@ -86,9 +86,10 @@ artifacts:
 ```bash
 sudo su
 ```
+- First of all select instance -> Actios -> Security -> Modify IAM role -> select relevant role
 
 - After running this script for setup deployingAgent on the EC2 instance
-- Make sure your Rigeon and Script region same.(6th line in this script)
+- Make sure your Rigeon and Script regions same.(6th line in this script)
  
 ```bash
 #!/bin/bash 
@@ -130,11 +131,37 @@ hooks:
       timeout: 300
       runas: root    
 ```
+
+- And Also create scripts folder
+- In scripts folder create two files
+   1. install_nginx.sh
+   ```bash
+   #!/bin/bash
+
+   sudo apt-get update
+   sudo apt-get install -y nginx
+   ```
+   2. start_nginx.sh
+   ```bash
+   #!/bin/bash
+
+  sudo service nginx start
+   ```
 - Push this file on CodeCommit
-- 
+
+- After Deployment group is create then Create deployment.
+
 ![CodeDeploy output ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/9a147120-e7d0-4251-bab0-664997f90511)
 
-# Step 7
+# Step 7: Create Pipeline
+
+- Step 1: Choose pipeline setting -> PipelineName > Service role
+- Step 2: Add source stage -> CodeCommit > repoName > branchName > Select CodePipeline periodically for changes(For autometion)
+- Step 3: Add build stage -> BuildProvider > Region > ProjectName > Single build 
+- Step 4: Add deploy stage -> DeployProvider > Region > AppName > Deployment group
+- Step 5: Review
+
+  # CodePipeline = Code->Commit->Build->Deploy
 ![pipeline output](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/78bab773-32f5-48a0-bea3-1b6f2711f635)
 
 # Step 8
