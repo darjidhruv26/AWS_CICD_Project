@@ -13,7 +13,7 @@
 ![AWSDevOps_pro](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/8df97317-8a3d-43b7-9b78-96bb9686cdff)
 
 # Step 2 Create a Repository in AWS CodeCommit
- After creating a repository on the next page you can see this warning.😟
+ - After creating a repository on the next page you can see this warning.😟
  ![WOrning aws](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/e9c9f8f2-1332-43b6-adfb-7d6a6acbd525)
  - Go to IAM and create a User
  - User can not get permission to assess AWS CodeCommit, So first gives permissions in IAM.
@@ -21,14 +21,46 @@
  - After this click on the Clone URL button.
 ![gitURL clone](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/ec2e4308-5ef2-48c9-ba67-0ea227354f5e)
 - Also, Add permission to the User get to assess this repo on Locel. 
-  (IAM -> Users -> SelectUser -> Add permissions -> Attech polocies directly -> 'AWSCodeCommitPowerUser')
-- After perform some gitActions and push all files in CodeCommit.
+  (IAM -> Users -> SelectUser -> Add permissions -> Attach policies directly -> 'AWSCodeCommitPowerUser')
+- After performing some GitHubActions and pushing all files in CodeCommit.
 
 ![CodeCommit Code ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/fe415a06-1e71-4560-8e1b-3c2a31809819)
 
+- Master is default branch.
 ![CodeCommit Branchs ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/c3443c4b-fb03-41d2-bf33-cd8d608e0293)
 
-# Step 3
+# Step 3 Create Build Project
+
+- GO to IAM and create Service Role for CodeBuild
+      Service Role ("Access Service-Service")
+  (IAM -> Create Role -> AWS service -> Use case -> Create)
+  
+ - Create buildSpec file.
+ ```bash
+   buildspec.yml
+ ```
+ ```bash
+    version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing NGINX
+      - sudo apt-get update
+      - sudo apt-get install nginx -y
+  build:
+    commands:
+      - echo Build started on `data`
+      - cp index.html /var/www/html/ 
+  post_build:
+    commands:
+      - echo Configuring NGINX
+
+artifacts:
+  files:
+    - '**/*'         
+ ```
+ 
 ![CodeBuild Project ss](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/4c334c45-8177-41be-8199-5ce5c8a13177)
 
 # Step 4
