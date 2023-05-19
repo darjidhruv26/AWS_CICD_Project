@@ -26,7 +26,7 @@
 - After this click on the Clone URL button.
 
 ![gitURL clone](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/ec2e4308-5ef2-48c9-ba67-0ea227354f5e)
-- Also, Add permission to the User get to access this repo on Locel. 
+- Also, Add permission to the User get to access this repo on Local. 
   (IAM -> Users -> SelectUser -> Add permissions -> Attach policies directly ->   'AWSCodeCommitPowerUser')
   
 - After performing some GitHubActions and pushing all files in CodeCommit.
