@@ -175,5 +175,5 @@ hooks:
 # Step 8: Output.
 ![OutPut SS](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/c6c91d9f-ee15-4070-a88e-0d79654d0afb)
 
-![1_s986xIGqhfsN8U--09_AdA](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/8a311a78-4f12-4393-931c-4b345d29d422)
+![1_s98xIGqhfsN8U--09_AdA](https://github.com/darjidhruv26/AWS_CICD_Project/assets/90086813/8a311a78-4f12-4393-931c-4b345d29d422)
 [Medium Blog Link](https://medium.com/aws-tip/implemented-ci-cd-pipeline-using-aws-services-e50ecf4c2f54)
